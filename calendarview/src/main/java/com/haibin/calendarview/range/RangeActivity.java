@@ -113,6 +113,9 @@ public class RangeActivity extends BaseActivity implements
 
         mTextMinRange.setText(String.format("min range = %s", mCalendarView.getMinSelectRange()));
         mTextMaxRange.setText(String.format("max range = %s", mCalendarView.getMaxSelectRange()));
+
+
+
     }
 
     private Calendar getSchemeCalendar(int year, int month, int day, int color, String text) {
@@ -214,8 +217,10 @@ public class RangeActivity extends BaseActivity implements
 
     @Override
     public void onCalendarSelectOutOfRange(Calendar calendar) {
-        // TODO: 2018/9/13 超出范围提示
-    }
+        Toast.makeText(this,
+                "aaavvcc",
+                Toast.LENGTH_SHORT).show();
+}
 
     @Override
     public void onSelectOutOfRange(Calendar calendar, boolean isOutOfMinRange) {

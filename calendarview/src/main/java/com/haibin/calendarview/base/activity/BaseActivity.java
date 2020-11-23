@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -39,6 +40,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutId());
         initView();
         initData();
+        Toast.makeText(this,"aaaaa",Toast.LENGTH_LONG).show();
     }
 
     /**
